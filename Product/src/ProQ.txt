@@ -1,0 +1,16 @@
+상품테이블
+ create table product(    
+ p_id number primary key,  제품번호  각행을 구분 지울수 있는 커럼-not null, unique   
+ name varchar2(20),        제품명    
+ num number,               수량
+ co varchar2(40),          제조사  
+ price number              가격 
+ );
+
+ 주문 
+ create table order1(
+ cus varchar2(20),       편의점상호  
+ da date,                주문날짜  
+ p_id number,            제품번호  
+ num number              수량 
+ );
